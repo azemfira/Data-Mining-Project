@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#b6d8d5">
+<h1 style ="color:#061b33"><center>Пациенттердің инсульт алуын немесе алмауын интеллектуалды талдау алгоритмдері негізінде  ажырату </center></h1>
+<h1 style ="color:#c45238">Random Forest Classifier</h1>
+<form method ="post" style="color:#c45238" action ="{{ url_for('predict')}}">
+    <fieldset style ="color:#c45238">
+        <legend></legend>
+        <h3 style ="color:#c45238">
+        id <input type = "text", name = "id1"/>
+        </br>
+        gender <input type = "text", name = "g"/>
+        </br>
+        age <input type = "text", name = "a"/>
+        </br>
+        hypertension <input type = "text", name = "hyp"/>
+        </br>
+        heart_disease <input type = "text", name = "h"/>
+        </br>
+        ever_married <input type = "text", name = "e"/>
+        </br>
+        work_type <input type = "text", name = "w"/>
+        </br>
+        residence_type <input type = "text", name = "r"/>
+        </br>
+        avg_glucose_level <input type = "text", name = "avg"/>
+        </br>
+        bmi <input type = "text", name = "bmi"/>
+        </br>
+        smoking_status <input type = "text", name = "sm"/>
+
+            <button type ="submit" class="btn" >Predict</button>
+        </h3>
+    </fieldset>
+</form>
+{{prediction_text}}
+</body>
+</html>
